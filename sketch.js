@@ -8,7 +8,7 @@ var rocks2 = [];
 //var x3 =30;
 function setup(){
   createCanvas(1080, 1080);
-  background(0);
+  background(20,40,20);
 
 //var x = random(width);
 
@@ -19,12 +19,11 @@ function setup(){
   }
 }
 function draw(){
-  ellipse(540,420,40,5);
-  ellipse(700,20,40,5);
+
   for(var i = 0; i < rocks.length; i++)
   {
     //change in value of y
-    var y = i *.66;
+    //var y = i *.66;
     //ellipse (x[i], y, 10);
     rocks1[i].display();
     rocks1[i].move();
