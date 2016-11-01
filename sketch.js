@@ -14,9 +14,9 @@ function setup(){
 //var x = random(width);
 
   for(var i =0; i<1000; i++) {
-    rocks[i] = new Rock(30,random(width),50);
-    rocks1[i] = new Rock(30,random(width),500);
-    rocks2[i] = new Rock(30,random(width),750);
+    rocks[i] = new Rock(30,20,50);
+    rocks1[i] = new Rock(30,20,500);
+    rocks2[i] = new Rock(30,20,750);
   }
 }
 function draw(){
@@ -52,8 +52,8 @@ function Rock(rockS, rockSpeed, rockXPosition) {
 this.display = function() {
 
     fill(this.fillColor);
-    ellipse(this.xPosition, ey, this.rockS, this.rockS);
-    ellipse(this.xPosition-1, ey, this.rockS-random(3), this.rockS);
+    ellipse(this.xPosition*random(3), ey, this.rockS-2, this.rockS);
+    ellipse(this.xPosition-2 *random(2), ey, this.rockS-random(3), this.rockS);
 
 };
 
