@@ -16,11 +16,11 @@ function setup(){
   }
 }
 function draw(){
-
+  ellipse(540,420,10);
   ellipse(540,20,10);
   for(var i = 0; i<rocks.length; i++)
   {
-    //change in valuse of y
+    //change in value of y
     var y = i *.66;
     //ellipse (x[i], y, 10);
 
@@ -48,7 +48,6 @@ this.display = function() {
     fill(this.fillColor);
     ellipse(this.xPosition, ey, this.rockS, this.rockS);
     ellipse(this.xPosition-1, ey, this.rockS-random(3), this.rockS);
-
 
 };
 
