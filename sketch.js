@@ -28,10 +28,13 @@ function draw(){
     //ellipse (x[i], y, 10);
     rocks1[i].display();
     rocks1[i].move();
+    //rocks1[i].interact();
     rocks2[i].display();
+    //rocks2[i].interact()
     rocks2[i].move();
     rocks[i].display();
     rocks[i].move();
+    //rocks[i].interact();
     // it makes each thing a seperate instance
     //pa,pa. length uses it to assign mbodies to an arraynew p5.Image(/,height,pInst)
     //if 50 units long and use length set equal to something new and can be used to add onto the arrayCopy(srb,srcPosition,dst,dstPosition,length)
@@ -63,4 +66,5 @@ this.move = function() {
     ey = ey + this.speed;
 
 };
+
 }
