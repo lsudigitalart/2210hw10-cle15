@@ -14,8 +14,8 @@ function setup(){
 
   for(var i =0; i<400; i++) {
     rocks[i] = new Rock(30,random(width),50);
-    rocks1[i] = new Rock(30,random(3),100);
-    rocks2[i] = new Rock(30,random(2),150);
+    rocks1[i] = new Rock(30,random(width),500);
+    rocks2[i] = new Rock(30,random(width),750);
   }
 }
 function draw(){
