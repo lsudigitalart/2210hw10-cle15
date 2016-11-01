@@ -6,13 +6,14 @@ var rocks2 = [];
 //var x1 =10;
 //var x2 =20;
 //var x3 =30;
+
 function setup(){
   createCanvas(1080, 1080);
   background(20,40,20);
 
 //var x = random(width);
 
-  for(var i =0; i<400; i++) {
+  for(var i =0; i<1000; i++) {
     rocks[i] = new Rock(30,random(width),50);
     rocks1[i] = new Rock(30,random(width),500);
     rocks2[i] = new Rock(30,random(width),750);
