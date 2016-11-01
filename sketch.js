@@ -24,8 +24,8 @@ function draw(){
     var y = i *.66;
     //ellipse (x[i], y, 10);
 
-    rocks.display();
-    rocks.move();
+    rocks[i].display();
+    rocks[i].move();
     // it makes each thing a seperate instance
     //pa,pa. length uses it to assign mbodies to an arraynew p5.Image(/,height,pInst)
     //if 50 units long and use length set equal to something new and can be used to add onto the arrayCopy(srb,srcPosition,dst,dstPosition,length)
