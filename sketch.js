@@ -1,6 +1,8 @@
 //var x =[];
 //can be defined up in the variables tab it was called
 var rocks = [];
+var rocks1 = [];
+var rocks2 = [];
 //var x1 =10;
 //var x2 =20;
 //var x3 =30;
@@ -8,22 +10,26 @@ function setup(){
   createCanvas(1080, 1080);
   background(0);
 
+//var x = random(width);
 
-
-  for(var i =0; i<400; i++)
-  {
-    rocks[i] = new rocks(10,2,290);
+  for(var i =0; i<400; i++) {
+    rocks[i] = new Rock(30,random(width),50);
+    rocks1[i] = new Rock(30,random(3),100;
+    rocks2[i] = new Rock(30,random(2),150);
   }
 }
 function draw(){
-  ellipse(540,420,10);
-  ellipse(540,20,10);
-  for(var i = 0; i<rocks.length; i++)
+  ellipse(540,420,40,5);
+  ellipse(700,20,40,5);
+  for(var i = 0; i < rocks.length; i++)
   {
     //change in value of y
-    var y = i *.66;
+    var y = i *.33;
     //ellipse (x[i], y, 10);
-
+    rocks1[i].display();
+    rocks1[i].move();
+    rocks2[i].display();
+    rocks2[i].move();
     rocks[i].display();
     rocks[i].move();
     // it makes each thing a seperate instance
@@ -32,7 +38,7 @@ function draw(){
   }
   //ellipse(x[1],20,40);
 }
-function rocks(rockS, rockSpeed, rockXPosition) {
+function Rock(rockS, rockSpeed, rockXPosition) {
   this.rockS = rockS;
 
   this.speed = rockSpeed;
@@ -41,7 +47,7 @@ function rocks(rockS, rockSpeed, rockXPosition) {
 
   this.fillColor = color(random(255), random(255), random(255));
 
-  var ey = 0;
+  var ey = random(width);
 
 this.display = function() {
 
@@ -53,33 +59,8 @@ this.display = function() {
 
 this.move = function() {
 
-    //++?
+
     ey = ey + this.speed;
 
 };
 }
-
-  /*createCanvas(320 , 240);
-  background(0);
-
-  for(var i = 0; i < 3000; i++){
-    //3000 random values
-    x[i]=round(random(0, 100));
-  }
-}
-
-function draw(){
-  //length finds the length of the array for x.lenght
-for (var i = 0; x.length; i++){
-  x[i] +=0.5;
-  var y = i * 0.4;
-  ellipse(x[i], y, 20);
-}
-
-}
-/*x1 = x1 + 0.5;
-x2 = x2 + 0.5;
-x3 = x3 + 0.5;
-ellipse(x1, 20, 20);
-ellipse(x3, 50, 20);
-ellipse(x3, 100, 20);
