@@ -14,7 +14,7 @@ function setup(){
 
   for(var i =0; i<400; i++) {
     rocks[i] = new Rock(30,random(width),50);
-    rocks1[i] = new Rock(30,random(3),100;
+    rocks1[i] = new Rock(30,random(3),100);
     rocks2[i] = new Rock(30,random(2),150);
   }
 }
@@ -24,7 +24,7 @@ function draw(){
   for(var i = 0; i < rocks.length; i++)
   {
     //change in value of y
-    var y = i *.33;
+    var y = i *.66;
     //ellipse (x[i], y, 10);
     rocks1[i].display();
     rocks1[i].move();
