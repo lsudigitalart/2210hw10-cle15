@@ -46,9 +46,9 @@ function rocks(rockS, rockSpeed, rockXPosition) {
 this.display = function() {
 
     fill(this.fillColor);
-    ellipse(this.xPosition, ey, this.rockShelves, this.rockS);
-    ellipse(this.xPosition-1, ey, this.rockShelves-random(3), this.rockS);
-    ellipse(this.xPosition-2, ey, this.rockShelves-random(2), this.rockS);
+    ellipse(this.xPosition, ey, this.rockS, this.rockS);
+    ellipse(this.xPosition-1, ey, this.rockS-random(3), this.rockS);
+
 
 };
 
